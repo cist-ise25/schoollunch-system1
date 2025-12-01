@@ -8,13 +8,13 @@ public class Main {
     private static final Scanner scanner = new Scanner(System.in);
 
     static void main() {
-        int personCount = scanner.nextInt();
-        int waterTemp = scanner.nextInt();
-        String pot = null;
+        int personCount = 10;
+        int waterTemp = 20;
         int riceVolume = personCount * 75;
         double washTime = riceVolume * 0.13 * 8 / waterTemp;
         int waterVolume = riceVolume * 100;
         int pattern;
+        String pot = null;
         if (riceVolume < 7500) {
             pattern = 1;
         } else if (riceVolume < 9400) {
@@ -23,11 +23,11 @@ public class Main {
             pattern = 3;
         }
 
-        if(pattern == 1){
+        if (pattern == 1){
             pot = "小さい鍋";
-        }else if(pattern == 2){
+        } else if (pattern == 2){
             pot = "浅い鍋";
-        }else if(pattern == 3){
+        } else if (pattern == 3){
             pot = "深い鍋";
         }
 
