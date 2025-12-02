@@ -8,11 +8,11 @@ public class Main {
     private static final Scanner scanner = new Scanner(System.in);
 
     static void main() {
-        int personCount = 10;
-        int waterTemp = 20;
+        int personCount = 20;
+        int waterTemp = 12;
         int riceVolume = personCount * 75;
-        double washTime = riceVolume * 0.13 * 8 / waterTemp;
-        int waterVolume = riceVolume * 100;
+        double washTime = riceVolume * 0.003 * 8 / waterTemp;
+        int waterVolume = (int) Math.ceil(riceVolume * 1.3);
         int pattern;
         String pot = null;
         if (riceVolume < 7500) {
